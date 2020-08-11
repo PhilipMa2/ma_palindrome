@@ -26,4 +26,8 @@ class MaPalindromeTest < Minitest::Test
     assert 12321.palindrome?
   end
 
+  def test_white_spaces
+    refute "    ".palindrome?
+  end
+
 end
