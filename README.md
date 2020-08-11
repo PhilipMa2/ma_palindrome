@@ -1,8 +1,6 @@
 # MaPalindrome
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ma_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`ma_palindrome` is a sample Ruby gem created in [*Learn Enough Ruby to Be Dangerous*](https://www.learnenough.com/ruby-tutorial) by Michael Hartl.
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`ma_palindrome` adds a `palindrome?` method to the `String` class, and can be used as follows:
+
+```
+$irb
+>> require 'ma_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+```
 
 ## Development
 
@@ -33,4 +41,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ma_palindrome.
-
