@@ -1,7 +1,6 @@
 require "ma_palindrome/version"
 
-class String
-
+module MaPalindrome
   # Returns true for a palindrome, false otherwise.
   def palindrome?
     processed_content == processed_content.reverse
@@ -11,6 +10,14 @@ class String
 
     # Returns content for palindrome testing.
     def processed_content
-      scan(/[a-z]/i).join.downcase
+      to_s.scan(/[a-z\d]/i).join.downcase
     end
 end
+
+class String
+  include MaPalindrome
+end
+
+class Integer
+  include MaPalindrome
+end 
